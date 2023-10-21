@@ -6,10 +6,10 @@ public class UserRole {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private  long userRoleId;
+    private  Long userRoleId;
 
 
-    UserRole()
+    public UserRole()
     {
 
     }
@@ -17,7 +17,7 @@ public class UserRole {
         return userRoleId;
     }
 
-    public void setUserRoleId(long userRoleId) {
+    public void setUserRoleId(Long userRoleId) {
         this.userRoleId = userRoleId;
     }
 

@@ -1,16 +1,18 @@
 package com.exam.models;
 
 import jakarta.persistence.*;
+import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
 @Table(name = "roles")
+@Component
 public class Role {
 
     @Id
-    private  long roleId;
+    private  Long roleId;
     private  String roleName;
 
     @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy ="role")
